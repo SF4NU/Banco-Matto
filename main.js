@@ -22,6 +22,10 @@ pulsanteAumentaPuntata.addEventListener('click', function() {
 }); //da completare la funzione
 
 pulsanteDiminuisciPuntata.addEventListener('click', function() { 
+  if (numero > 0 && numero < 6) {
+    numero--;
+    return numeroGiocatore1.textContent = numero;
+  } 
 }); //da completare la funzione
 
 
