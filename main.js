@@ -27,5 +27,9 @@ pulsanteDiminuisciPuntata.addEventListener('click', function() {
     return numeroGiocatore1.textContent = numero;
   } 
 }); //da completare la funzione
-
+function prova() {
+  if (true) {
+    return console.log('hello');
+  }
+}
 
