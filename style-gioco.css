@@ -7,6 +7,20 @@ body {
     flex-direction: column;
 }
 
+.croupier {
+    z-index: 1;
+}
+
+.cmex {
+    margin: 0px 0px 20px 0px;
+    background-color: black;
+    color: white;
+    padding: 1% 2% 1% 2%;
+    border: groove gold;
+    border-radius: 11px;
+    box-shadow: 5px 6px 11px -1px #000000c4;
+}
+
 /* tavolo da gioco */
 
 .bordo-tavolo {
@@ -53,10 +67,11 @@ body {
 /* tutto quello ceh tiguarda il banchiere */
 
 .banchiere {
-    background-color: rebeccapurple;
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
+    margin: 50px 0px 0px 0px;
 }
+
 
 /* tutto quello che riguarda il riquadro giocatore */
 
