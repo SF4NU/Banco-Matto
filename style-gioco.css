@@ -50,6 +50,8 @@ body {
 
 /* banchiere e giocatore */
 
+/* tutto quello ceh tiguarda il banchiere */
+
 .banchiere {
     background-color: rebeccapurple;
     width: 100px;
@@ -58,37 +60,57 @@ body {
 
 /* tutto quello che riguarda il riquadro giocatore */
 
+
 .contenitore-giocatore {
+    width: 430px;
+    height: 150px;
+    background-color: #00000033;
+    border-radius: 10px;
+    margin: 0px 0px 20px 0px;
+    padding: 2px 10px 2px 10px;
     display: flex;
+    align-items: center;
+    position: relative;
 
 }
 
-.giocatore {
+.numerogiocatore {
     display: flex;
     width: 160px;
     height: 100px;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: space-evenly;
 }
 
 .saldo {
+    background-color: black;
+    color: white;
     position: absolute;
     right: 0px;
     top: 0px;
-    margin: 5px 5px 0px 0px;
+    margin: 8px 8px 0px 0px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 9px -1px white;
 
 }
 
 .numero {
-    background-color: white;
-    width: 100px;
     text-align: center;
     margin: 0px;
+    font-size: x-large;
 }
 
-.piu, .meno {
-    padding: 5px 10px 5px 10px
+.numeropiu, .numeromeno {
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.numeropiu:active, .numeromeno:active {
+    border: ridge  black;
 }
 
 .puntata-giocatore {
@@ -100,6 +122,32 @@ body {
     justify-content: space-evenly;
 }
 
+.puntatapiu, .puntatameno {
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.puntatapiu:active, .puntatameno:active {
+    border: ridge  black;
+}
+
 .puntata {
     margin: 0px;
+    font-size: x-large;
+}
+
+.conferma {
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+.conferma:active {
+    border: ridge  black;
 }
