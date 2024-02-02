@@ -49,18 +49,18 @@ puntataMeno.addEventListener('click', function() {
   }
 })
 
-conferma.addEventListener('click', function() {
-  const numeroBanchiere = generaNumeroBanchiere();
+conferma.addEventListener('click', function() { //questa funzione serve a far partire il gioco una volta che il giocatore
+  const numeroBanchiere = generaNumeroBanchiere(); // ha schiacciato su "conferma"
   console.log('numero banchiere:');
   console.log(numeroBanchiere);
-  if (numero > 0) {
-    if (numero === numeroBanchiere && saldoValore > 0) {
-      saldoValore += variabileSomma * 3;
-    } else {
+  if (numero > 0) {  // se il numero puntato è diverso da 0 parte la scommessa altrimenti non succede nulla
+    if (numero === numeroBanchiere && saldoValore > 0) { // caso vincita, controlla se il numero scelto è uguale al numero
+      saldoValore += variabileSomma * 3;  // random del banchiere
+    } else {   //caso perdita fa l'opposto
       saldoValore -= variabileSomma;
     }
-      saldoTotale.textContent = saldoValore;
-      getSomma.textContent = 0;
+      saldoTotale.textContent = saldoValore;  //aggiorna contenuto dell'html attraverso il dom
+      getSomma.textContent = 0;   //reimposta a 0 le variabili puntata e numero
       variabileSomma = 0;
     }  
   });
