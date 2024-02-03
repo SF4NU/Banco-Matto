@@ -64,7 +64,7 @@ half.addEventListener('click', function() {
     if (controllaSaldoFinale > saldoValore && controllaVariabileSomma <= saldoValore ) {
       variabileSomma += saldoValore / 2;
       mexCroupier.textContent = "Così tanto?"
-      return getSomma.textContent = variabileSomma;
+      return getSomma.textContent = `${variabileSomma}$`;
     }
   }
 })
@@ -76,7 +76,7 @@ threeQuarters.addEventListener('click', function() {
   if (variabileSomma >= 0 && variabileSomma < saldoValore) {
     if (controllaSaldoFinale > saldoValore && controllaVariabileSomma <= saldoValore ) {
       variabileSomma += Math.floor(Math.round(saldoValore * 3/4));mexCroupier.textContent = "Perderai sicuramente"
-      return getSomma.textContent = variabileSomma;
+      return getSomma.textContent = `${variabileSomma}$`;
     }
   }
 })
@@ -84,14 +84,14 @@ threeQuarters.addEventListener('click', function() {
 allIn.addEventListener('click', function() {
     variabileSomma = saldoValore;
     mexCroupier.textContent = "ATTENZIONE! QUALCUNO HA LE PALLE!"
-   return getSomma.textContent = variabileSomma;
+   return getSomma.textContent = `${variabileSomma}$`;
   
 })
 
 document.getElementById('puntataPiu').addEventListener('mousedown', function() { //funzione per aumentare la somma della puntata di 25 (per ora)
   if (variabileSomma >= 0 && variabileSomma < saldoValore) {
     variabileSomma += 25;
-   return getSomma.textContent = variabileSomma;
+   return getSomma.textContent = `${variabileSomma}$`;
   }
   console.log(variabileSomma);
 })
@@ -99,7 +99,7 @@ document.getElementById('puntataPiu').addEventListener('mousedown', function() {
 document.getElementById('puntataMeno').addEventListener('click', function() {
   if (variabileSomma > 0) {
     variabileSomma -= 25;
-    return getSomma.textContent = variabileSomma;
+    return getSomma.textContent = `${variabileSomma}$`;
   }
 })
 const mexCroupier = document.getElementById('messaggioCroupier');
