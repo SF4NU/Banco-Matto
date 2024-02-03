@@ -89,17 +89,19 @@ allIn.addEventListener('click', function() {
   
 })
 
-document.getElementById('puntataPiu').addEventListener('mousedown', function() { //funzione per aumentare la somma della puntata di 25 (per ora)
+document.getElementById('puntataPiu').addEventListener('click', function() { //funzione per aumentare la somma della puntata di 25 (per ora)
+  const controllaPuntataPiu = variabileSomma + 25;
   if (variabileSomma >= 0 && variabileSomma < saldoValore) {
-    variabileSomma += 25;
+    if (controllaPuntataPiu <= saldoValore) {
+      variabileSomma += 25;
    return getSomma.textContent = `${variabileSomma}$`;
   }
-  console.log(variabileSomma);
+    }
 })
 
 document.getElementById('puntataMeno').addEventListener('click', function() {
-  const controlloPuntata = variabileSomma - 25; 
-  if (variabileSomma > 0 && controlloPuntata >= 0) {
+  const controlloPuntataMeno = variabileSomma - 25; 
+  if (variabileSomma > 0 && controlloPuntataMeno >= 0) {
     variabileSomma -= 25;
     return getSomma.textContent = `${variabileSomma}$`;
   }
