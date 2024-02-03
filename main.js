@@ -102,47 +102,27 @@ document.getElementById('puntataMeno').addEventListener('click', function() {
     return getSomma.textContent = variabileSomma;
   }
 })
-    const mexCroupier = document.getElementById('messaggioCroupier');
+const mexCroupier = document.getElementById('messaggioCroupier');
     
-function test() {
-  console.log("test") 
-}
-function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}function test() {
-  console.log("test") 
-}
+conferma.addEventListener('click', function() { //questa funzione serve a far partire il gioco una volta che il giocatore
+  const numeroBanchiere = generaNumeroBanchiere(); // ha schiacciato su "conferma"
+  console.log('numero banchiere:');
+  console.log(numeroBanchiere);
+    if (numero > 0) {  // se il numero puntato è diverso da 0 parte la scommessa altrimenti non succede nulla
+      if (numero === numeroBanchiere && saldoValore > 0) { // caso vincita, controlla se il numero scelto è uguale al numero
+        saldoValore += variabileSomma * 3;  // random del banchiere
+        mexCroupier.textContent = `Hai vinto: ${variabileSomma * 3}$`;
+    } else {   //caso perdita fa l'opposto
+        saldoValore -= variabileSomma;
+        mexCroupier.textContent = `Hai perso: ${variabileSomma}$`;
+    }
+        saldoTotale.textContent = `${saldoValore}$`;  //aggiorna contenuto dell'html attraverso il dom
+        getSomma.textContent = 0;   //reimposta a 0 le variabili puntata e numero
+        variabileSomma = 0;
+    }  
+    if (saldoValore === 0) {
+      saldoValore = 500;
+      saldoTotale.textContent = `${saldoValore}$`;
+      mexCroupier.textContent = "Hai perso tutto, ecco altri 500$";
+  } 
+});
