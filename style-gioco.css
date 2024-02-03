@@ -93,21 +93,23 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px 1px 15px 5px #000000c4;
 
 }
 
 /* il riquadro dei soldi del giocatore in alto a destra del riquadro giocatore */
 
 .saldo {
+    border: groove gold;
     background-color: black;
     color: white;
     position: absolute;
-    right: 255px;
-    top: 355px;
+    right: 257px;
+    top: 348px;
     margin: 8px 8px 0px 0px;
     padding: 6px 30px 6px 30px;
     border-radius: 15px;
-    box-shadow: inset 0px 0px 9px -1px white;
+    box-shadow: inset 0px 0px 9px -1px white, 0px 1px 15px 5px #000000c4;
 }
 
 /* il numero che il giocatore deve indovinare */
@@ -121,19 +123,11 @@ body {
 .numero {
     text-align: center;
     margin: 0px;
-    font-size: x-large;
 }
 
 .numeropiu, .numeromeno {
-    padding: 5px 20px 5px 20px;
     border-radius: 20px;
-    border: none;
-    /* background-color: black; */
-    color: white;
-}
-
-.numeropiu:active, .numeromeno:active {
-    border: ridge  black;
+    cursor: pointer;
 }
 
 /* i soldi che il giocatore vuole puntare */
@@ -151,24 +145,16 @@ body {
 }
 
 .puntatapiu, .puntatameno {
-    padding: 5px 20px 5px 20px;
     border-radius: 20px;
-    border: none;
-    /* background-color: black; */
-    color: white;
-}
-
-.puntatapiu:active, .puntatameno:active {
-    border: ridge  black;
+    cursor: pointer;
 }
 
 .rilancio {
-    margin: 0px 20px 0px 20px;
+    cursor: pointer;
 }
 
 .puntata {
     margin: 0px;
-    font-size: x-large;
 }
 
 /* il pulsante di conferma */
@@ -176,12 +162,5 @@ body {
 .conferma {
     padding: 10px 25px 10px 25px;
     border-radius: 20px;
-    border: none;
-    background-color: black;
-    color: white;
-    font-size: large;
-}
-
-.conferma:active {
-    border: ridge  black;
+    cursor: pointer;
 }
