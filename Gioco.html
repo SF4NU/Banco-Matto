@@ -10,33 +10,49 @@
 </head>
 
 <body>
+    <!-- icona per tornare alla home -->
     <div class="exit">
         <a href="index.html">
-            <img class="icona-exit" src="Immagini/home.png" alt="Icona casa">
+            <img class="iconaexit" src="Immagini/home.png" alt="Icona casa">
         </a>
     </div>
-    <p class="cmex">dfgdtfhdgfhfghfdg</p>
+    <!-- l'immagine del croupier -->
     <img class="croupier" src="Immagini/croupier.png" alt="croupier">
-    <div class="bordo-tavolo">
+    <!-- da qui inizia il tavolo il contenitore e il bordo del tavolo -->
+    <div class="bordotavolo">
+        <!-- qui parte l'interno del tavolo -->
         <div class="tavolo">
+            <!-- questo e il riquadro dove appare il dado -->
             <div class="banchiere">
                 <img id="dado" src="Immagini/dice1.png" alt="Daddo faccia 1">
             </div>
-            <div>
-                <h1>HAI PERSO</h1>
-            </div>
-            <div class="contenitore-giocatore">
-                <div class="saldo" title="Il tuo saldo" id="saldoTotale">1000$</div>
+            <!-- la notifica per capire se hai vinto o meno -->
+            <p class="cmex">HAI VINTO 1000$</p>
+            <!-- i soldi del giocatore -->
+            <div class="saldo" title="Il tuo saldo" id="saldoTotale">1000$</div>
+            <!-- qui inizia il riquadro del giocatore -->
+            <div class="contenitoregiocatore">
+                <!-- questi sono i pulsanti per scegliere il numero da indovinare -->
                 <div class="numerogiocatore" title="Scegli il numero del Banchiere">
                     <button class="numeromeno" type="button" id="meno">-</button>
                     <p class="numero" id="numeroGiocatore">0</p>
                     <button class="numeropiu" type="button" id="piu">+</button>
                 </div>
-                <div class="puntata-giocatore" title="Scegli la puntata">
-                    <button type="button" class="puntatameno" id="puntataMeno">-</button>
-                    <p class="puntata" id="puntataGiocatore">0</p>
-                    <button type="button" class="puntatapiu" id="puntataPiu">+</button>
+                <!-- questi i pulsanti di quanto vuole scommettere il giocatore -->
+                <div class="puntatagiocatore" title="Scegli quanto puntare">
+                    <div class="puntata-giocatore">
+                        <button type="button" class="puntatameno" id="puntataMeno">-</button>
+                        <p class="puntata" id="puntataGiocatore">0</p>
+                        <button type="button" class="puntatapiu" id="puntataPiu">+</button>
+                    </div>
+                    <!-- i pulsanti dei rilanci più alti -->
+                    <div>
+                        <button type="button" class="rilancio" id="">1/4</button>
+                        <button type="button" class="rilancio" id="">1/5</button>
+                        <button type="button" class="rilancio" id="">ALL IN</button>
+                    </div>
                 </div>
+                <!-- pulsante conferma  -->
                 <button type="button" class="conferma" id="pulsanteConferma">Conferma</button>
             </div>
         </div>

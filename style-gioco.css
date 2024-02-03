@@ -7,10 +7,13 @@ body {
     flex-direction: column;
 }
 
+/* l'icona del croupier */
+
 .croupier {
     z-index: 1;
 }
 
+/* il messaggio al centro del tavolo che dirà il croupier */
 .cmex {
     margin: 0px 0px 20px 0px;
     background-color: black;
@@ -18,12 +21,13 @@ body {
     padding: 1% 2% 1% 2%;
     border: groove gold;
     border-radius: 11px;
-    box-shadow: 5px 6px 11px -1px #000000c4;
+    box-shadow: 0px 1px 15px 5px #000000c4, inset 0px 0px 11px -1px white;
+    font-size: 30px;
 }
 
 /* tavolo da gioco */
 
-.bordo-tavolo {
+.bordotavolo {
     width: 1082px;
     height: 670px;
     background-color: #A1641C;
@@ -44,6 +48,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 /* icona torna alla home */
@@ -58,13 +63,13 @@ body {
     height: 50px;
 }
 
-.icona-exit {
+.iconaexit {
     height: 100%;
 }
 
 /* banchiere e giocatore */
 
-/* tutto quello ceh tiguarda il banchiere */
+/* tutto quello che riguarda il banchiere */
 
 .banchiere {
     width: 64px;
@@ -75,39 +80,42 @@ body {
 
 /* tutto quello che riguarda il riquadro giocatore */
 
+/* il riquadro del giocatore */
 
-.contenitore-giocatore {
+.contenitoregiocatore {
     width: 430px;
     height: 150px;
-    background-color: #00000033;
+    background-color: #00000063;
     border-radius: 10px;
     margin: 0px 0px 20px 0px;
     padding: 2px 10px 2px 10px;
     display: flex;
-    align-items: center;
     position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
-.numerogiocatore {
-    display: flex;
-    width: 160px;
-    height: 100px;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/* il riquadro dei soldi del giocatore in alto a destra del riquadro giocatore */
 
 .saldo {
     background-color: black;
     color: white;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 255px;
+    top: 355px;
     margin: 8px 8px 0px 0px;
     padding: 6px 30px 6px 30px;
     border-radius: 15px;
     box-shadow: inset 0px 0px 9px -1px white;
+}
 
+/* il numero che il giocatore deve indovinare */
+
+.numerogiocatore {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 .numero {
@@ -128,13 +136,18 @@ body {
     border: ridge  black;
 }
 
+/* i soldi che il giocatore vuole puntare */
+
+.puntatagiocatore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .puntata-giocatore {
     display: flex;
-    width: 100px;
-    height: 100px;
-    flex-direction: column;
+    gap: 5px;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .puntatapiu, .puntatameno {
@@ -149,10 +162,16 @@ body {
     border: ridge  black;
 }
 
+.rilancio {
+    margin: 0px 20px 0px 20px;
+}
+
 .puntata {
     margin: 0px;
     font-size: x-large;
 }
+
+/* il pulsante di conferma */
 
 .conferma {
     padding: 10px 25px 10px 25px;
