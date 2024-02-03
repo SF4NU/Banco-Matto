@@ -98,7 +98,8 @@ document.getElementById('puntataPiu').addEventListener('mousedown', function() {
 })
 
 document.getElementById('puntataMeno').addEventListener('click', function() {
-  if (variabileSomma > 0) {
+  const controlloPuntata = variabileSomma - 25; 
+  if (variabileSomma > 0 && controlloPuntata >= 0) {
     variabileSomma -= 25;
     return getSomma.textContent = `${variabileSomma}$`;
   }
