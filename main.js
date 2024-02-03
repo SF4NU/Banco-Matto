@@ -126,3 +126,7 @@ conferma.addEventListener('click', function() { //questa funzione serve a far pa
     mexCroupier.textContent = "Hai perso tutto, ecco altri 500$";
    } 
   });
+
+  function test() {
+    console.log("test");
+  }
