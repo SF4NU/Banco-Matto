@@ -116,7 +116,7 @@ conferma.addEventListener('click', function() { //questa funzione serve a far pa
       saldoValore -= variabileSomma;
       mexCroupier.textContent = `Hai perso: ${variabileSomma}$`;
     }
-      saldoTotale.textContent = saldoValore;  //aggiorna contenuto dell'html attraverso il dom
+      saldoTotale.textContent = `${saldoValore}$`;  //aggiorna contenuto dell'html attraverso il dom
       getSomma.textContent = 0;   //reimposta a 0 le variabili puntata e numero
       variabileSomma = 0;
     }  
