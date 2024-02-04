@@ -175,9 +175,11 @@ function fermaPuntata() {
 const mexCroupier = document.getElementById('messaggioCroupier');
     
 conferma.addEventListener('click', function() { //questa funzione serve a far partire il gioco una volta che il giocatore
-  const numeroBanchiere = generaNumeroBanchiere(); // ha schiacciato su "conferma"
-  console.log(`${numeroBanchiere}`);
     if (numero > 0) {  // se il numero puntato è diverso da 0 parte la scommessa altrimenti non succede nulla
+      if (variabileSomma === 0) {
+        cambiaTestoTavolo('Non puoi scommettere con 0$!')
+      } else {
+        const numeroBanchiere = generaNumeroBanchiere();
       if (numero === numeroBanchiere && saldoValore > 0) { // caso vincita, controlla se il numero scelto è uguale al numero
         saldoValore += variabileSomma * 3;  // random del banchiere
         let numeroCasuale = Math.floor(Math.random() * 30);
@@ -190,7 +192,9 @@ conferma.addEventListener('click', function() { //questa funzione serve a far pa
         saldoTotale.textContent = `${saldoValore}$`;  //aggiorna contenuto dell'html attraverso il dom
         getSomma.textContent = 0;   //reimposta a 0 le variabili puntata e numero
         variabileSomma = 0;
-    }  
+    }}  else {
+          cambiaTestoTavolo('Scegli un numero prima di giocare!')
+    }
     if (saldoValore === 0) {
       saldoValore = 500;
       saldoTotale.textContent = `${saldoValore}$`;
