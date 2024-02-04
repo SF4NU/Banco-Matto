@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(Immagini/Opera_senza_titolo.png);
+    background-image: url(Immagini/Sfondo-sito.png);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,8 +56,8 @@ body {
 
 .info {
     position: absolute;
-    top: 0px;
-    right: 0;
+    top: 0;
+    right: 5px;
     margin: 25px 25px 0px 0px;
 }
 
