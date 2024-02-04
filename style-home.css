@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(Immagini/Sfondo-sito.jpg);
 }
 
 /* tavolo da gioco */

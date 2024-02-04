@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(Immagini/Sfondo-sito.jpg);
 }
 
 /* tavolo da gioco */
@@ -43,6 +44,15 @@ body {
     margin-top: 30px;
     cursor: pointer;
     height: 50px;
+    background-color: red;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: inset black 0px 0px 5px 1px;
+}
+
+.exit:hover {
+    transition: ease-out 0.5s;
+    background-color: rgb(202, 29, 29);
 }
 
 .iconaexit {
