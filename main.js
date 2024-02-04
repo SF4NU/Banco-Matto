@@ -1,25 +1,16 @@
+const dadi = [
+  "Immagini/dice1.png",
+  "Immagini/dice2.png",
+  "Immagini/dice3.png",
+  "Immagini/dice4.png",
+  "Immagini/dice5.png",
+  "Immagini/dice6.png"
+];
+
 const cambiaDado = document.getElementById('dado');
 function generaNumeroBanchiere() {
   let numeroRandom = Math.floor(Math.random() * 6) + 1;  // funzione per generare il numero del banchiere
-  if (numeroRandom === 1) {
-    const dice = "Immagini/dice1.png";
-    document.getElementById('dado').src = dice;
-  } else if (numeroRandom === 2) {
-    const dice = "Immagini/dice2.png";
-    document.getElementById('dado').src = dice;
-  } else if (numeroRandom === 3) {
-    const dice = "Immagini/dice3.png";
-    document.getElementById('dado').src = dice;
-  } else if (numeroRandom === 4) {
-    const dice = "Immagini/dice4.png";
-    document.getElementById('dado').src = dice;
-  } else if (numeroRandom === 5) {
-    const dice = "Immagini/dice5.png";
-    document.getElementById('dado').src = dice;
-  } else if (numeroRandom === 6) {
-    const dice = "Immagini/dice6.png";
-    document.getElementById('dado').src = dice;
-  }
+  document.getElementById('dado').src = dadi[numeroRandom - 1];
   return numeroRandom;
 }
 console.log(generaNumeroBanchiere()); // test numero banchiere

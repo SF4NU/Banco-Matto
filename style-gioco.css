@@ -14,9 +14,10 @@ body {
 /* l'icona del croupier */
 
 .croupier {
-    position: relative;
-    bottom: -45px;
-    height: 265px;
+    position: fixed;
+    height: 250px;
+    top: 0;
+    z-index: 10;
 }
 
 /* il messaggio al centro del tavolo che dirà il croupier */
@@ -42,6 +43,8 @@ body {
     align-items: center;
     box-shadow: 0 0 55px 17px #000000c4;
     background-image: url(Immagini/Tavolo.png);
+    position: fixed;
+    margin-top: 40px;
 }
 
 .tavolo {
