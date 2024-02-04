@@ -30,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 /* menù iniziale */
@@ -48,5 +49,12 @@ body {
     background-color: grey;
     text-decoration: none;
     color: black;
+}
+
+.info {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin: 25px 25px 0px 0px;
 }
 
