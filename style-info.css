@@ -47,11 +47,12 @@ body {
 .boxinfo {
     background-color: white;
     border-radius: 15px;
-    border: solid 5px black;
+    border: groove 10px gold;
     width: 700px;
     height: auto;
     padding: 15px 30px 15px 30px;
     margin-top: 25px;
+    background-color: #19751f;
 }
 
 h1 {
