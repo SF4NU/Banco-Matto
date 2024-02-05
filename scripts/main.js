@@ -208,3 +208,5 @@ conferma.addEventListener('click', function() { //questa funzione serve a far pa
   } 
   console.log(numero);
 });
+
+console.log('test');
