@@ -58,15 +58,15 @@ body {
     margin-top: 30px;
     cursor: pointer;
     height: 50px;
-    background-color: red;
+    background-color: #E10000;
     border: solid 2px black;
     border-radius: 10px;
     box-shadow: inset black 0px 0px 5px 1px;
 }
 
 .exit:hover {
-    transition: ease-out 0.5s;
-    background-color: rgb(202, 29, 29);
+    transition: ease-in-out 0.2s;
+    background-color: #8C0000;
 }
 
 .iconaexit {
@@ -158,12 +158,12 @@ body {
     justify-content: center;
     align-items: center;
     border: groove 4px gold;
-    background-color: #db0000;
+    background-color: #E10000;
     box-shadow: inset 0px 0px 6px 0px black;
 }
 
 .numeropiu:active, .numeromeno:active {
-    background-color: rgb(202, 29, 29);
+    background-color: #8C0000;
 }
 
 /* icone delle freccette per le puntate e il numero */
@@ -199,12 +199,12 @@ body {
     justify-content: center;
     align-items: center;
     border: groove 4px gold;
-    background-color: #db0000;
+    background-color: #E10000;
     box-shadow: inset 0px 0px 6px 0px black;
 }
 
 .puntatapiu:active, .puntatameno:active {
-    background-color: rgb(202, 29, 29);
+    background-color: #8C0000;
 }
 
 .puntata {
@@ -216,7 +216,7 @@ body {
     color: #f1f1f1;
     cursor: pointer;
     font-weight: bolder;
-    background-color: #db0000;
+    background-color: #E10000;
     border: groove 4px gold;
     border-radius: 5px;
     width: 80px;
@@ -225,7 +225,7 @@ body {
 }
 
 .rilancio:active {
-    background-color: rgb(202, 29, 29);
+    background-color: #8C0000;
 }
 
 .allin {
@@ -242,7 +242,7 @@ body {
     border-radius: 20px;
     border: groove 4px gold;
     cursor: pointer;
-    background-color: #db0000;
+    background-color: #E10000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +250,7 @@ body {
 }
 
 .conferma:active {
-    background-color: rgb(202, 29, 29);
+    background-color: #8C0000;
 }
 
 /* il footer */

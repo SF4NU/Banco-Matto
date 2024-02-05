@@ -23,15 +23,15 @@ body {
     margin-top: 30px;
     cursor: pointer;
     height: 50px;
-    background-color: red;
+    background-color: #E10000;
     border: solid 2px black;
     border-radius: 10px;
     box-shadow: inset black 0px 0px 5px 1px;
 }
 
 .exit:hover {
-    transition: ease-out 0.5s;
-    background-color: rgb(202, 29, 29);
+    transition: ease-in-out 0.2s;
+    background-color: #8C0000;
 }
 
 .iconaexit {
@@ -51,7 +51,7 @@ body {
     height: auto;
     padding: 15px 30px 15px 30px;
     margin-top: 25px;
-    background-color: #19751f;
+    background-image: url(../Immagini/Tavolo1.png);
 }
 
 h1 {
