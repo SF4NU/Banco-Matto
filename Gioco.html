@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style-gioco.css">
+    <link rel="shortcut icon" href="Immagini/Logopiccolino.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>GIOCA</title>
+    <title>GIOCO</title>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             </div>
             <!-- la notifica per capire se hai vinto o meno -->
 
-            
+
             <div class="js-div-testo-dado"><!--NON TOCCARE QUESTA PARTE DEL CODICE-->
                 <!--NON TOCCARE QUESTA PARTE DEL CODICE-->
             </div><!--NON TOCCARE QUESTA PARTE DEL CODICE-->
@@ -46,11 +47,14 @@
                 <!-- questi sono i pulsanti per scegliere il numero da indovinare -->
                 <div class="numerogiocatore" title="Scegli il numero del Banchiere">
                     <div class="sceltanumero">
-                        <button class="numeromeno" type="button" id="meno"><img class="piùmeno" src="Immagini/down-arrow.png"
-                                alt="icona freccia giù" draggable="false"></button>
-                        <p class="numero" id="numeroGiocatore">0</p>
-                        <button class="numeropiu" type="button" id="piu"><img class="piùmeno" src="Immagini/up-arrow.png"
-                                alt="icona freccia sù" draggable="false"></button>
+                        <button class="numeromeno" type="button" id="meno"><img class="piùmeno"
+                                src="Immagini/down-arrow.png" alt="icona freccia giù" draggable="false"></button>
+                        <div class="bdado">
+                            <img class="idado" src="Immagini/dice.png" alt="icona dado">
+                        </div>
+                        <!-- <p class="numero" id="numeroGiocatore"></p> -->
+                        <button class="numeropiu" type="button" id="piu"><img class="piùmeno"
+                                src="Immagini/up-arrow.png" alt="icona freccia sù" draggable="false"></button>
                     </div>
                     <div class="brilancio">
                         <button type="button" class="rilancio" id="half">1/2</button>
@@ -60,11 +64,11 @@
                 <!-- questi i pulsanti di quanto vuole scommettere il giocatore -->
                 <div class="puntatagiocatore" title="Scegli quanto puntare">
                     <div class="puntata-giocatore">
-                        <button type="button" class="puntatameno" id="puntataMeno"><img class="piùmeno" src="Immagini/down-arrow.png"
-                                alt="icona freccia giù" draggable="false"></button>
+                        <button type="button" class="puntatameno" id="puntataMeno"><img class="piùmeno"
+                                src="Immagini/down-arrow.png" alt="icona freccia giù" draggable="false"></button>
                         <p class="puntata" id="puntataGiocatore">0$</p>
-                        <button type="button" class="puntatapiu" id="puntataPiu"><img class="piùmeno" src="Immagini/up-arrow.png"
-                                alt="icona freccia su" draggable="false"></button>
+                        <button type="button" class="puntatapiu" id="puntataPiu"><img class="piùmeno"
+                                src="Immagini/up-arrow.png" alt="icona freccia su" draggable="false"></button>
                     </div>
                     <!-- i pulsanti dei rilanci più alti -->
                     <div class="allin">
@@ -72,7 +76,8 @@
                     </div>
                 </div>
                 <!-- pulsante conferma  -->
-                <button type="button" class="conferma" id="pulsanteConferma"><img src="Immagini/check.png" alt="icona check" draggable="false"></button>
+                <button type="button" class="conferma" id="pulsanteConferma"><img src="Immagini/check.png"
+                        alt="icona check" draggable="false"></button>
             </div>
         </div>
     </div>
@@ -80,6 +85,9 @@
         <div class="logofooter">
             <img class="logo" src="Immagini/Logobancomatto.png" alt="logo banco matto" draggable="false">
         </div>
+        <p>©2024 <a href="https://github.com/SF4NU" target="_blank">SF4NU</a> & <a href="https://github.com/Vinx92" target="_blank">Vinx92</a> |
+            privacy & cookie policy</p>
+        <a class="credits" href="credits.html">Credits</a>
     </footer>
     <script type="module" src="scripts/main.js">
     </script>
