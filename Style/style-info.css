@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(Immagini/Sfondo-sito.png);
+    background-image: url(../Immagini/Sfondo-sito.png);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;

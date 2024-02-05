@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(Immagini/Sfondo-sito.png);
+    background-image: url(../Immagini/Sfondo-sito.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 55px 17px #000000c4;
-    background-image: url(Immagini/Tavolo.png);
+    background-image: url(../Immagini/Tavolo.png);
     position: fixed;
     margin-top: 40px;
 }
