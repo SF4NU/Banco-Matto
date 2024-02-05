@@ -5,7 +5,6 @@ import { frasiPerdita } from '../data/data.js';
 import { frasiPerditaConRegalo } from '../data/data.js';
 
 
-const cambiaDado = document.getElementById('dado');
 let numeroCasualeMexCroupier = Math.floor(Math.random() * 20);
 
 document.querySelector('.js-div-testo-dado').textContent = `${frasiBenvenuto[numeroCasualeMexCroupier]}`
@@ -17,7 +16,6 @@ function generaNumeroBanchiere() {  // funzione per generare il numero del banch
   return numeroRandom;
 }
 
-let sommaGiocatore1 = 100; //saldo del giocatore 1 nel caso dovessimo aggiungere un giocatore 2
 const numeroGiocatore1 = document.getElementById('numeroGiocatore'); // usa id per identificare il numero su cui punta il giocatore che poi parte da 0 nella variabile "numero"
 const getSomma = document.getElementById('puntataGiocatore'); // identifica la somma su cui scommette il giocatore
 const saldoTotale = document.getElementById('saldoTotale');
@@ -67,7 +65,7 @@ document.getElementById('piu').addEventListener('click', function() {  //funzion
 }); //da completare la funzione
 
 document.getElementById('meno').addEventListener('click', function() { // funzione per diminuire il numero
-  if (numero > 0 && numero <= 6) {
+  if (numero > 1 && numero <= 6) {
     numero--;
     aggiornaImmagineDado(numero - 1)
     return numeroGiocatore1.textContent = numero;
