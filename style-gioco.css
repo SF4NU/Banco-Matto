@@ -141,13 +141,18 @@ body {
 .numeropiu, .numeromeno {
     border-radius: 20px;
     cursor: pointer;
-    width: 40px;
-    height: 30px;
+    width: 45px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: groove 4px gold;
     background-color: #db0000;
+    box-shadow: inset 0px 0px 6px 0px black;
+}
+
+.numeropiu:active, .numeromeno:active {
+    background-color: rgb(202, 29, 29);
 }
 
 /* icone delle freccette per le puntate e il numero */
@@ -177,22 +182,18 @@ body {
 .puntatapiu, .puntatameno {
     border-radius: 20px;
     cursor: pointer;
-    width: 40px;
-    height: 30px;
+    width: 45px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: groove 4px gold;
     background-color: #db0000;
+    box-shadow: inset 0px 0px 6px 0px black;
 }
 
-.brilancio {
-    display: flex;
-    flex-direction: column;
-}
-
-.rilancio {
-    cursor: pointer;
+.puntatapiu:active, .puntatameno:active {
+    background-color: rgb(202, 29, 29);
 }
 
 .puntata {
@@ -200,13 +201,44 @@ body {
     color: white;
 }
 
+.rilancio {
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #db0000;
+    border: groove 4px gold;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+    box-shadow: inset 0px 0px 6px 0px black;
+}
+
+.rilancio:active {
+    background-color: rgb(202, 29, 29);
+}
+
+.allin {
+    position: relative;
+    right: 40px;
+}
+
+
 /* il pulsante di conferma */
 
 .conferma {
+    height: 40px;
     padding: 10px 25px 10px 25px;
     border-radius: 20px;
+    border: groove 4px gold;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    background-color: #db0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 11px 0px black;
+}
+
+.conferma:active {
+    background-color: rgb(202, 29, 29);
 }
 
 /* il footer */
@@ -227,10 +259,13 @@ footer {
     height: 100%;
     object-fit: fill;
 }
-.js-div-testo-dado { /*NON TOCCARE QUESTA PARTE DI CODICE*/
+
+/*NON TOCCARE QUESTA PARTE DI CODICE*/
+
+.js-div-testo-dado { 
     display: flex;
     flex-direction: row;
-    margin: 0px 0px 20px 0px;
+    margin: 1em 0px 1em 0em;
     background-color: black;
     color: white;
     padding: 10px 40px;

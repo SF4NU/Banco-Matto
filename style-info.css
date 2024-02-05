@@ -3,7 +3,6 @@ body {
     margin: 0;
     background-color: #94683F;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-image: url(Immagini/Sfondo-sito.png);
@@ -48,11 +47,22 @@ body {
 .boxinfo {
     background-color: white;
     border-radius: 15px;
-    border: solid 2px black;
+    border: solid 5px black;
     width: 700px;
     height: auto;
-    padding: 0px 30px 0px 30px;
+    padding: 15px 30px 15px 30px;
+    margin-top: 25px;
 }
+
+h1 {
+    text-align: center;
+}
+
+dl {
+    text-align: center;
+}
+
+/* footer */
 
 footer {
     background-color: black;
