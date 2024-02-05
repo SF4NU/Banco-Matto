@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style-gioco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>GIOCA</title>
 </head>
 
@@ -41,18 +46,10 @@
                 <!-- questi sono i pulsanti per scegliere il numero da indovinare -->
                 <div class="numerogiocatore" title="Scegli il numero del Banchiere">
                     <div class="sceltanumero">
-                        <button class="numeromeno" type="button" id="meno"><img src="Immagini/down-arrow.png"
+                        <button class="numeromeno" type="button" id="meno"><img class="piùmeno" src="Immagini/down-arrow.png"
                                 alt="icona freccia giù"></button>
                         <p class="numero" id="numeroGiocatore">0</p>
-                        <button class="numeropiu" type="button" id="piu"><img src="Immagini/up-arrow.png"
-                                alt="icona freccia sù"></button>
-                    </div>
-                    <!-- la seconda possibilità di indovinare -->
-                    <div class="sceltanumero">
-                        <button class="numeromeno" type="button" id="meno"><img src="Immagini/down-arrow.png"
-                                alt="icona freccia giù"></button>
-                        <p class="numero" id="numeroGiocatore">0</p>
-                        <button class="numeropiu" type="button" id="piu"><img src="Immagini/up-arrow.png"
+                        <button class="numeropiu" type="button" id="piu"><img class="piùmeno" src="Immagini/up-arrow.png"
                                 alt="icona freccia sù"></button>
                     </div>
                     <div class="brilancio">
@@ -63,10 +60,10 @@
                 <!-- questi i pulsanti di quanto vuole scommettere il giocatore -->
                 <div class="puntatagiocatore" title="Scegli quanto puntare">
                     <div class="puntata-giocatore">
-                        <button type="button" class="puntatameno" id="puntataMeno"><img src="Immagini/down-arrow.png"
+                        <button type="button" class="puntatameno" id="puntataMeno"><img class="piùmeno" src="Immagini/down-arrow.png"
                                 alt="icona freccia giù"></button>
-                        <p class="puntata" id="puntataGiocatore">0 $</p>
-                        <button type="button" class="puntatapiu" id="puntataPiu"><img src="Immagini/up-arrow.png"
+                        <p class="puntata" id="puntataGiocatore">0$</p>
+                        <button type="button" class="puntatapiu" id="puntataPiu"><img class="piùmeno" src="Immagini/up-arrow.png"
                                 alt="icona freccia su"></button>
                     </div>
                     <!-- i pulsanti dei rilanci più alti -->
@@ -79,6 +76,11 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="logofooter">
+            <img class="logo" src="Immagini/Logobancomatto.png" alt="">
+        </div>
+    </footer>
     <script src="data/data.js"></script>
     <script src="scripts/main.js">
     </script>
