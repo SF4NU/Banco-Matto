@@ -22,17 +22,6 @@ body {
     z-index: 10;
 }
 
-/* il messaggio al centro del tavolo che dirà il croupier */
-.cmex {
-    background-color: black;
-    color: white;
-    padding: 1% 2% 1% 2%;
-    border: groove gold;
-    border-radius: 11px;
-    box-shadow: 0px 1px 15px 5px #000000c4, inset 0px 0px 11px -1px white;
-    font-size: 30px;
-}
-
 /* tavolo da gioco */
 
 .bordotavolo {
@@ -238,3 +227,28 @@ footer {
     height: 100%;
     object-fit: fill;
 }
+.js-div-testo-dado { /*NON TOCCARE QUESTA PARTE DI CODICE*/
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border: groove gold;
+    border-radius: 11px;
+    box-shadow: 0px 1px 15px 5px #000000c4, inset 0px 0px 11px -1px white;
+    font-size: 25px;
+    align-items: center; 
+} /*NON TOCCARE QUESTA PARTE DI CODICE*/
+.dado-fantasma { /*NON TOCCARE QUESTA PARTE DI CODICE*/
+    margin-left: 20px;
+    height: 50px;
+    opacity: 1;
+            transition: opacity 0.5s ease-in-out; /*serve per rendere le animazioni del dado più fluide*/
+} /*NON TOCCARE QUESTA PARTE DI CODICE*/
+.dado-fantasma:active { /*va insieme alla parte sopra*/
+    opacity: 0;
+} /*NON TOCCARE QUESTA PARTE DI CODICE*/
+.messaggioCMEX {
+    flex: 1;
+} /*NON TOCCARE QUESTA PARTE DI CODICE*/
