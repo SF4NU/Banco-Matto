@@ -10,6 +10,8 @@ body {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 /* icona torna alla home */
@@ -56,8 +58,8 @@ footer {
     background-color: black;
     width: 100%;
     height: 75px;
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
 }
 
 .logofooter {
