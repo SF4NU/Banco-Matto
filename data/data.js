@@ -109,7 +109,7 @@ const frasiBenvenuto = [
   "Un nuovo avventuriero! Spero tu abbia indossato la tua armatura fortunata.",
   "Benvenuto al circo del gioco d'azzardo, dove ogni scommessa è un numero da circo!",
   "Fai il tuo ingresso trionfale al tavolo! La fortuna ti aspetta... o forse no.",
-  "Scommettiamo che non avevi idea di dove finiresti oggi? Benvenuto al tavolo!",
+  "Ma che piacere! Svuota il portafoglio grazie!",
   "Il tuo posto fortunato ti aspetta! Preparati a diventare il protagonista della tua scommessa.",
   "Ecco un caloroso benvenuto! Ricorda, i perdenti possono anche sorridere.",
   "Sei pronto a ballare con la dea fortuna? Benvenuto al nostro palcoscenico!",
