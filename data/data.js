@@ -1,4 +1,4 @@
-const dadi = [
+export const dadi = [
   {
     img: "Immagini/dice1.png"
   }, {
@@ -14,7 +14,7 @@ const dadi = [
   }  
 ];
 
-const frasiVittoria = [
+export const frasiVittoria = [
   "Oh, guarda chi abbiamo qui, un vincitore!",
   "Che sorpresa, hai vinto. Scommetto che non lo vedevi venir!",
   "Deve essere il tuo giorno fortunato, non ci credo proprio.",
@@ -47,7 +47,7 @@ const frasiVittoria = [
     "Hai vinto di nuovo! Sei ufficialmente un fenomeno del gioco d'azzardo!",
 ];
 
-const frasiPerdita = [
+export const frasiPerdita = [
   "Ogni vincita ha la sua perdita, è matematica.",
   "Sembra che la fortuna ti abbia abbandonato oggi.",
   "Non preoccuparti, i soldi non crescono sugli alberi.",
@@ -80,7 +80,7 @@ const frasiPerdita = [
   "Dopo tante perdite, ormai ti considero un mio allievo. Continua così!",
 ];
 
-const frasiPerditaConRegalo = [
+export const frasiPerditaConRegalo = [
   "Oh no, hai perso... ma guarda, un bonus di partecipazione di 500$!",
   "La tua fortuna è così scadente che ho pensato di darti un piccolo 'rimborso'.",
   "Che sfortuna! Ecco 500$ come premio di consolazione.",
@@ -103,7 +103,7 @@ const frasiPerditaConRegalo = [
   "Hai perso, ma hai guadagnato un piccolo 'premio della consolazione'. 500$!",
 ];
 
-const frasiBenvenuto = [
+export const frasiBenvenuto = [
   "Benvenuto al tavolo della fortuna! Spero tu abbia portato con te un po' di buona sorte.",
   "Eccoci qua! Sei pronto a sfidare il destino?",
   "Un nuovo avventuriero! Spero tu abbia indossato la tua armatura fortunata.",

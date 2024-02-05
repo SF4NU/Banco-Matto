@@ -1,3 +1,10 @@
+import {dadi} from '../data/data.js';
+import { frasiVittoria } from '../data/data.js';
+import { frasiBenvenuto } from '../data/data.js';
+import { frasiPerdita } from '../data/data.js';
+import { frasiPerditaConRegalo } from '../data/data.js';
+
+
 const cambiaDado = document.getElementById('dado');
 let numeroCasualeMexCroupier = Math.floor(Math.random() * 20);
 
