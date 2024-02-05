@@ -190,7 +190,7 @@ conferma.addEventListener('click', function() { //questa funzione serve a far pa
         cambiaTestoTavolo(`Hai perso: ${variabileSomma}$, ${frasiPerdita[numeroCasuale]}`);
     }
         saldoTotale.textContent = `${saldoValore}$`;  //aggiorna contenuto dell'html attraverso il dom
-        getSomma.textContent = 0;   //reimposta a 0 le variabili puntata e numero
+        getSomma.textContent = '0$';   //reimposta a 0 le variabili puntata e numero
         variabileSomma = 0;
     }}  else {
           cambiaTestoTavolo('Scegli un numero prima di giocare!')
