@@ -97,7 +97,7 @@ export const frasiPerditaConRegalo = [
   "Mi dispiace per la tua perdita, ma guarda il lato positivo: 500$ in più per te.",
   "Ecco 500$ per coprire la tua sconfitta. Grazie per la tua generosità!",
   "Non tutti possono dire di aver perso così bene. Ecco 500$ per la tua bravura.",
-  "Per la tua coraggio sapevo che ti avrei dovuto dare qualcosa. Eccoti 500$!",
+  "Per il tuo coraggio sapevo che ti avrei dovuto dare qualcosa. Eccoti 500$!",
   "Nonostante la sconfitta, ti premio con 500$. Non dire che non ho cuore.",
   "La tua sfortuna è la mia fortuna. Prendi questi 500$ e sorridi!",
   "Hai perso, ma hai guadagnato un piccolo 'premio della consolazione'. 500$!",
@@ -126,6 +126,71 @@ export const frasiBenvenuto = [
   "Che il gioco abbia inizio! Benvenuto al tavolo, dove le carte decidono il destino.",
 ];
 
+export const frasiAllInCroupier = [
+  "Guarda chi è il coraggioso! Tutti dentro!",
+  "Oh, un giocatore audace! Vediamo cosa succede.",
+  "Hai le palle! Tutte le tue fiches sul piatto!",
+  "Speriamo che la fortuna ti sorrida!",
+  "Ecco un vero scommettitore! Tutto o niente!",
+  "Sei sicuro di voler rischiare tutto? Fai il tuo gioco!",
+  "All-in! La tua mossa è audace, vediamo se paga!",
+  "Il tavolo è caldo, andiamo con l'all-in!",
+  "Coraggio! Un vero giocatore mette tutto in gioco.",
+  "Hai deciso di rischiare tutto, vediamo come va!",
+  "Scommetti grosso, scommetti ora!",
+  "L'all-in è il modo migliore per scoprire chi sei!",
+  "Un'audacia mossa! Tutte le tue fiches nel mezzo!",
+  "Questo è ciò che chiamo un vero all-in!",
+  "Il coraggio è il nome del gioco, all-in!",
+  "Ecco un giocatore che non ha paura di rischiare!",
+  "Tutte le tue fiches sulla linea, vai!",
+  "Sei pronto per il grande colpo? All-in!",
+  "Tutto o niente! Lancia le fiches nel mezzo!",
+  "Scommetti il massimo, vinci il massimo!"
+];
 
+export const frasiHalfCroupier = [
+  "Moderazione è la chiave, hai scommesso la metà.",
+  "Un approccio equilibrato! Hai puntato solo la metà.",
+  "Scommetti con saggezza, solo il 50% questa volta.",
+  "Non tutto, ma neanche niente! Hai scelto il mezzo termine.",
+  "Un gioco sicuro. Hai scommesso solo la metà.",
+  "Bilanciato! Hai messo in gioco solo il 50% del tuo saldo.",
+  "Non tutto, ma abbastanza! Hai puntato il 50%.",
+  "Scommessa prudente, hai puntato solo la metà.",
+  "Equilibrio è la tua strategia! Hai scommesso il 50%.",
+  "Un passo alla volta, hai puntato solo la metà.",
+  "Hai mantenuto la calma, hai scommesso solo la metà.",
+  "Moderazione è virtù! Solo il 50% della tua puntata.",
+  "Non troppo, non troppo poco. Hai scommesso la metà.",
+  "Scommessa conservativa, hai messo in gioco solo il 50%.",
+  "Saggio! Hai scommesso solo la metà questa volta.",
+  "Hai deciso di giocare in modo sicuro, puntata del 50%.",
+  "Scommessa equa, hai puntato solo la metà.",
+  "Scommetti con prudenza, hai messo in gioco solo il 50%.",
+  "Mezza strada è il tuo stile. Hai scommesso il 50%.",
+  "Equilibrio perfetto! Solo il 50% della tua puntata."
+];
 
-
+export const frasiThreeQuartersCroupier = [
+  "Scommetti forte, hai puntato il 75% del saldo!",
+  "Un'audace mossa! Tre quarti del tuo saldo in gioco.",
+  "Coraggioso! Hai scommesso il 75% del tuo saldo.",
+  "Non hai paura del rischio! Tre quarti delle fiches sul tavolo.",
+  "Tre quarti, una scommessa decisa!",
+  "Aumenta la posta! Hai puntato il 75% del tuo saldo.",
+  "Scommetti grande o vai a casa! Tre quarti del tuo saldo sono in gioco.",
+  "Scommessa aggressiva, tre quarti del tuo saldo sulla linea.",
+  "Il gioco si fa duro, hai scommesso il 75%!",
+  "Hai deciso di alzare la posta! Tre quarti del saldo in scommessa.",
+  "Scommetti in grande stile! Tre quarti del tuo saldo sono in gioco.",
+  "Tre quarti del tuo saldo sulla scommessa, vai!",
+  "Scommessa ambiziosa! Hai puntato il 75% del tuo saldo.",
+  "Tre quarti, un vero scommettitore!",
+  "Scommessa forte, tre quarti del tuo saldo sulla linea.",
+  "Hai deciso di giocare in modo aggressivo, tre quarti del saldo in scommessa.",
+  "Tre quarti delle fiches in gioco, vediamo come va!",
+  "Scommetti duro! Hai puntato il 75% del tuo saldo.",
+  "Scommessa coraggiosa, tre quarti delle fiches sul piatto.",
+  "Tre quarti del saldo in gioco, sei pronto per la sfida!"
+];

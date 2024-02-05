@@ -1,8 +1,13 @@
-import {dadi} from '../data/data.js';
-import { frasiVittoria } from '../data/data.js';
-import { frasiBenvenuto } from '../data/data.js';
-import { frasiPerdita } from '../data/data.js';
-import { frasiPerditaConRegalo } from '../data/data.js';
+import {
+  dadi,
+  frasiAllInCroupier,
+  frasiPerdita,
+  frasiVittoria,
+  frasiPerditaConRegalo,
+  frasiBenvenuto,
+  frasiHalfCroupier,
+  frasiThreeQuartersCroupier
+} from '../data/data.js';
 
 
 let numeroCasualeMexCroupier = Math.floor(Math.random() * 20);
@@ -54,12 +59,12 @@ document.getElementById('piu').addEventListener('click', function() {  //funzion
   if (numero === 0) {
     numero++;
     aggiornaImmagineDado(numero - 1)
-    numeroGiocatore1.textContent = numero;
+    numeroGiocatore1.src = dadi[numero - 1].img;
     return numero;
   } else if (numero > 0 && numero < 6) {
     aggiornaImmagineDado(numero)
     numero++;
-    numeroGiocatore1.textContent = numero;
+    numeroGiocatore1.src = dadi[numero - 1].img;
     return numero;
   } 
 }); //da completare la funzione
@@ -68,7 +73,7 @@ document.getElementById('meno').addEventListener('click', function() { // funzio
   if (numero > 1 && numero <= 6) {
     numero--;
     aggiornaImmagineDado(numero - 1)
-    return numeroGiocatore1.textContent = numero;
+    numeroGiocatore1.src = dadi[numero - 1].img;
   } 
 }); //da completare la funzione
 
@@ -81,7 +86,8 @@ half.addEventListener('click', function() {
   if (variabileSomma >= 0 && variabileSomma < saldoValore) {
     if (controllaSaldoFinale > saldoValore && controllaVariabileSomma <= saldoValore ) {
       variabileSomma += Math.floor(Math.round(saldoValore / 2));
-      cambiaTestoTavolo("Così tanto?");
+      let numeroCasuale = Math.floor(Math.random() * 20);
+      cambiaTestoTavolo(`${frasiHalfCroupier[numeroCasuale]}`);
       return getSomma.textContent = `${variabileSomma}$`;
     }
   }
@@ -94,17 +100,20 @@ threeQuarters.addEventListener('click', function() {
   if (variabileSomma >= 0 && variabileSomma < saldoValore) {
     if (controllaSaldoFinale > saldoValore && controllaVariabileSomma <= saldoValore ) {
       variabileSomma += Math.floor(Math.round(saldoValore * 3/4));
-      cambiaTestoTavolo("Perderai sicuramente");
+      let numeroCasuale = Math.floor(Math.random() * 20);
+      cambiaTestoTavolo(`${frasiThreeQuartersCroupier[numeroCasuale]}`);
       return getSomma.textContent = `${variabileSomma}$`;
     }
   }
 })
 
 allIn.addEventListener('click', function() {
+  if (variabileSomma !== saldoValore) {
     variabileSomma = Math.floor(Math.round(saldoValore));
-    cambiaTestoTavolo("ATTENZIONE! QUALCUNO HA LE PALLE!");
+    let numeroCasuale = Math.floor(Math.random() * 20);
+    cambiaTestoTavolo(`${frasiAllInCroupier[numeroCasuale]}`);
    return getSomma.textContent = `${variabileSomma}$`;
-  
+  }
 })
 
 let intervalloPuntata;
@@ -206,7 +215,4 @@ conferma.addEventListener('click', function() { //questa funzione serve a far pa
       let numeroCasuale = Math.floor(Math.random() * 20);
       cambiaTestoTavolo(frasiPerditaConRegalo[numeroCasuale]);
   } 
-  console.log(numero);
 });
-
-console.log('test');
