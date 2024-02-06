@@ -1,113 +1,40 @@
-/* Stili base per dispositivi di piccole dimensioni */
+
+  /* Stili di base per tutti i dispositivi */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
 }
 
-.bordo-tavolo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.tavolo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Stili per dispositivi con viewport width inferiore a 600px */
+@media only screen and (max-width: 599px) {
+  .container {
+    width: 100%;
+  }
+
+  /* Aggiungi altri stili qui se necessario */
 }
 
-.info {
-  margin-bottom: 20px;
+/* Stili per dispositivi con viewport width compreso tra 600px e 959px */
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .container {
+    width: 90%;
+  }
+
+  /* Aggiungi altri stili qui se necessario */
 }
 
-.pulsante-gioco {
-  display: inline-block;
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
+/* Stili per dispositivi con viewport width superiore a 960px */
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 80%;
+  }
+
+  /* Aggiungi altri stili qui se necessario */
 }
 
-.pulsante-gioco:hover {
-  background-color: #0056b3;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  margin: 0;
-  margin-right: 20px;
-}
-
-/* Stili per dispositivi di medie dimensioni */
-@media (min-width: 768px) {
-  .bordo-tavolo {
-      height: 80vh;
-  }
-
-  .tavolo {
-      padding: 40px;
-  }
-
-  .info {
-      margin-bottom: 40px;
-  }
-
-  .pulsante-gioco {
-      padding: 15px 30px;
-  }
-
-  footer {
-      padding: 40px;
-  }
-
-  footer p {
-      margin-right: 40px;
-  }
-}
-
-/* Stili per dispositivi di grandi dimensioni */
-@media (min-width: 1024px) {
-  .bordo-tavolo {
-      height: 70vh;
-  }
-
-  .tavolo {
-      padding: 60px;
-  }
-
-  .info {
-      margin-bottom: 60px;
-  }
-
-  .pulsante-gioco {
-      padding: 20px 40px;
-  }
-
-  footer {
-      padding: 60px;
-  }
-
-  footer p {
-      margin-right: 60px;
-  }
-}
