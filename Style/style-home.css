@@ -14,41 +14,6 @@ body {
     font-weight: 600;
 }
 
-/* == Stili di base - Mobile first ===== */
-Qui vanno gli stili per il mobile
-/* == Media queries (breakpoint) ===== */
-/* -----------------------------------
-IPAD PORTRAIT
------------------------------------- */
-@media only screen and (min-width: 768px) {}
-
-/* -----------------------------------
-IPAD LANDSCAPE + NETBOOK
------------------------------------- */
-@media only screen and (min-width: 1024px) {}
-
-/* -----------------------------------
-DESKTOP
------------------------------------- */
-@media only screen and (min-width: 1200px) {}
-
-@media screen and (min-width: 480px) {
-    body {}
-}
-
-@media screen and (min-width: 768px) {
-    body {}
-}
-
-@media screen and (min-width: 1024px) {
-    body {}
-}
-
-@media screen and (min-width: 1200px) {
-    body {
-        background: gray;
-    }
-}
 
 /* tavolo da gioco */
 
