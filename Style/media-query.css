@@ -1,65 +1,153 @@
-/* 
-  ##Device = Desktops
-  ##Display = 1281px to higher resolution desktops
-*/
+body {
+  font-size: 16px;
+}
 
-@media (min-width: 1281px) {
-  
-    /* CSS */
-    
+.bordo-tavolo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.pulsante-gioco {
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+
+
+/* Media query per iPhone 6/7/8 */
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
   }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    /* CSS */
-    
+
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    /* CSS */
-    
+
+  .pulsante-gioco {
+    width: 80px;
+    height: 25px;
+    font-size: 0.9rem;
   }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    /* CSS */
-    
+
+  img {
+    width: 150px;
+    height: 150px;
+
   }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    /* CSS */
-    
+
+  a {
+    font-size: 1.5rem;
   }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    /* CSS */
-    
+}
+
+/* Media query per iPhone X/XS/11 Pro */
+@media (max-width: 414px) {
+  body {
+    font-size: 16px;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .pulsante-gioco {
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Media query per iPhone XR/11 */
+@media (max-width: 414px) and (min-height: 896px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .pulsante-gioco {
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Media query per iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bordo-tavolo {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .pulsante-gioco {
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Media query per schermi di dimensioni ridotte */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .pulsante-gioco {
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+
+/* Stile base per dispositivi mobili */
+a {
+  font-size: 1.2rem;
+}
+
+/* Media query per iPhone 6/7/8 */
+@media (max-width: 375px) {
+  a {
+    font-size: 1rem;
+  }
+}
+
+/* Media query per iPhone X/XS/11 Pro */
+@media (max-width: 414px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media query per iPhone XR/11 */
+@media (max-width: 414px) and (min-height: 896px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media query per iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media query per schermi di dimensioni ridotte */
+@media (max-width: 767px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
