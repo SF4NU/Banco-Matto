@@ -4,9 +4,7 @@ Progetto realizzato assieme a @Vinx92 e @FDMDeveloper
 
 ---
 
-# Banco-Matto: Regole del Gioco
-
-Il Gioco del Dado è un semplice ma coinvolgente passatempo dove il tuo obiettivo è scommettere su un numero e sperare che il dado ti favorisca!
+# Banco-Matto:
 
 ## Come Giocare
 
