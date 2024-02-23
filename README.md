@@ -1,6 +1,7 @@
 # [Gioca](https://sf4nu.github.io/Banco-Matto/)
 
-Progetto realizzato assieme a @Vinx92 e @FDMDeveloper
+Progetto realizzato assieme a [Vinx92](https://github.com/Vinx92) e [FDMDeveloper](https://github.com/FDMDeveloper).
+
 
 ---
 
